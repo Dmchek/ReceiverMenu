@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="ReceiverMenu">
+    <output-path>$PROJECT_DIR$/out/artifacts/ReceiverMenu</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="receiverMenu.Main" />
+        <option name="description" value="" />
+        <option name="height" value="768" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="b522" />
+        <option name="vendor" value="" />
+        <option name="version" value="0.1" />
+        <option name="width" value="1024" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="ReceiverMenu.jar">
+        <element id="module-output" name="ReceiverMenu" />
+      </element>
+    </root>
+  </artifact>
+</component>
