@@ -1,8 +1,5 @@
 package receiverMenu;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableArray;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 import javafx.scene.control.MenuButton;
@@ -40,9 +37,8 @@ public class Controller {
     @FXML
     private AnchorPane remoteController;
 
-
     @FXML
-    void initialize(){
+    void initialize() {
 
     }
 }
