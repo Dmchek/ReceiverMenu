@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="receiverMenu.resource.model.B522.B522Controller">
+   <children>
+      <BorderPane prefHeight="768.0" prefWidth="1024.0">
+         <right>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="675.0" fitWidth="206.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/pult.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="menu" layoutX="88.0" layoutY="327.0" mnemonicParsing="false" opacity="0.0" prefHeight="21.0" prefWidth="42.0" style="-fx-background-radius: 20;" text="menu" />
+                  <Button fx:id="exit" layoutX="141.0" layoutY="296.0" mnemonicParsing="false" opacity="0.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-radius: 20;" text="exit" />
+                  <Button fx:id="ok" layoutX="94.0" layoutY="250.0" mnemonicParsing="false" opacity="0.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-radius: 20;" text="ok" />
+                  <Button fx:id="left" layoutX="53.0" layoutY="244.0" mnemonicParsing="false" opacity="0.0" prefHeight="40.0" prefWidth="30.0" style="-fx-background-radius: 20;" text="left" />
+                  <Button fx:id="right" layoutX="135.0" layoutY="245.0" mnemonicParsing="false" opacity="0.0" prefHeight="40.0" prefWidth="30.0" style="-fx-background-radius: 20;" text="right" />
+                  <Button fx:id="up" layoutX="90.0" layoutY="210.0" mnemonicParsing="false" opacity="0.0" prefHeight="30.0" prefWidth="40.0" style="-fx-background-radius: 20;" text="up" />
+                  <Button fx:id="down" layoutX="90.0" layoutY="290.0" mnemonicParsing="false" opacity="0.0" prefHeight="30.0" prefWidth="40.0" style="-fx-background-radius: 20;" text="down" />
+                  <Button fx:id="mute" layoutX="48.0" layoutY="205.0" mnemonicParsing="false" opacity="0.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-radius: 20;" text="mute" />
+               </children>
+            </AnchorPane>
+         </right>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="9.0" layoutY="84.0" style="-fx-border-color: #000;">
+                     <children>
+                        <MediaView fx:id="video" fitHeight="600.0" fitWidth="800.0" />
+                        <FlowPane fx:id="viewMenu" disable="true" layoutY="320.0" prefHeight="130.0" prefWidth="800.0" style="-fx-background-color: rgba(0, 0, 0, 0.7);" visible="false">
+                           <children>
+                              <AnchorPane fx:id="anchor1" prefHeight="130.0" prefWidth="160.0">
+                                 <children>
+                                    <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" x="30.0" y="10.0">
+                                       <image>
+                                          <Image url="@image/prilojeniya.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="text1" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Приложения" x="35.0" y="110.0">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="anchor2" prefHeight="130.0" prefWidth="160.0">
+                                 <children>
+                                    <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" x="30.0" y="10.0">
+                                       <image>
+                                          <Image url="@image/kinozalbI.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="text2" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Кинозалы" x="40.0" y="110.0">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="anchor3" prefHeight="130.0" prefWidth="160.0">
+                                 <children>
+                                    <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" x="30.0" y="10.0">
+                                       <image>
+                                          <Image url="@image/luchwee.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="text3" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Лучшее на ТВ" x="30.0" y="110.0">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="anchor4" prefHeight="130.0" prefWidth="160.0">
+                                 <children>
+                                    <Text fx:id="text4" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Телегид" x="50.0" y="110.0">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" x="30.0" y="10.0">
+                                       <image>
+                                          <Image url="@image/telegid.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="anchor5" prefHeight="130.0" prefWidth="160.0">
+                                 <children>
+                                    <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" x="30.0" y="10.0">
+                                       <image>
+                                          <Image url="@image/lk.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="text5" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Личный кабинет" x="20.0" y="110.0">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </FlowPane>
+                        <VBox fx:id="lkMenu" disable="true" prefHeight="599.0" prefWidth="799.0" visible="false">
+                           <children>
+                              <AnchorPane prefHeight="34.0" prefWidth="799.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Text fill="GREY" strokeType="OUTSIDE" strokeWidth="0.0" text="Личный кабинет" x="50.0" y="25.0">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="GREY" strokeType="OUTSIDE" strokeWidth="0.0" text="5000 Р" x="700.0" y="25.0">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                 </children></AnchorPane>
+                              <HBox prefHeight="460.0" prefWidth="799.0">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #696969;">
+                                       <children>
+                                          <AnchorPane fx:id="anchor10" prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fx:id="text10" fill="#ababab" strokeType="OUTSIDE" strokeWidth="0.0" text="Статус" x="150.0" y="35.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="anchor11" prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fx:id="text11" fill="#ababab" strokeType="OUTSIDE" strokeWidth="0.0" text="ТВ-Почта" x="130.0" y="35.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="anchor12" prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fx:id="text12" fill="#ababab" strokeType="OUTSIDE" strokeWidth="0.0" text="Повтор активации" x="60.0" y="35.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="anchor13" prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fx:id="text13" fill="#ababab" strokeType="OUTSIDE" strokeWidth="0.0" text="Услуги" x="160.0" y="35.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="anchor14" prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fx:id="text14" fill="#ababab" strokeType="OUTSIDE" strokeWidth="0.0" text="Оплата" x="150.0" y="35.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="anchor15" prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fx:id="text15" fill="#ababab" strokeType="OUTSIDE" strokeWidth="0.0" text="Устройства" x="120.0" y="35.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="anchor16" prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fx:id="text16" fill="#ababab" strokeType="OUTSIDE" strokeWidth="0.0" text="Вопрос-ответ" x="100.0" y="35.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="anchor17" prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fx:id="text17" fill="#ababab" strokeType="OUTSIDE" strokeWidth="0.0" text="Настройки" x="120.0" y="35.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                       </children></VBox>
+                                    <VBox prefHeight="200.0" prefWidth="320.0" style="-fx-background-color: #808080;">
+                                       <children>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Класс 0" x="50.0" y="20.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#44ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="20,12,2017 - 20,12,2018" x="50.0" y="40.0">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#44ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="0" x="250.0" y="30.0">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Единый&quot;" x="50.0" y="20.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#44ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="20,12,2017 - 20,12,2018" x="50.0" y="40.0">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#44ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="1" x="250.0" y="30.0">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Наш Футбол&quot;" x="50.0" y="20.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#44ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="20,12,2017 - 20,12,2018" x="50.0" y="40.0">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#44ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="4" x="250.0" y="30.0">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Ночной&quot;" x="50.0" y="20.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#44ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="20,12,2017 - 20,12,2018" x="50.0" y="40.0">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#44ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="6" x="250.0" y="30.0">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Класс 7" x="50.0" y="20.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#44ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="20,12,2017 - 20,12,2018" x="50.0" y="40.0">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#44ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="7" x="250.0" y="30.0">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Единый&quot;" x="50.0" y="20.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#44ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="20,12,2017 - 20,12,2018" x="50.0" y="40.0">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#44ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="12" x="250.0" y="30.0">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Детский&quot;" x="50.0" y="20.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#44ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="20,12,2017 - 20,12,2018" x="50.0" y="40.0">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#44ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="15" x="250.0" y="30.0">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="200.0" prefWidth="280.0" style="-fx-background-color: #808080;">
+                                       <children>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fill="#ababab" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Модель приемника:" y="35.0">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="GS B522" x="15.0" y="55.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fill="#ababab" strokeType="OUTSIDE" strokeWidth="0.0" text="1. ID:" y="35.0">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="50040901693198" x="15.0" y="55.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fill="#ababab" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Версия ПО приемника:" y="35.0">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="3.14.69" x="15.0" y="55.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fill="#ababab" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Версия ПО модуля:" y="35.0">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="GS1: 0.0.118, CAS: 1.7.18, App: 3.1" x="15.0" y="55.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fill="#ababab" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Серийный номер приемника:" y="35.0">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="30 1610 20 16 02 179 32398351" x="15.0" y="55.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fill="#ababab" strokeType="OUTSIDE" strokeWidth="0.0" text="6. Онлайн ТВ:" y="35.0">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Подключен" x="15.0" y="55.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fill="#ababab" strokeType="OUTSIDE" strokeWidth="0.0" text="7. Платформа:" y="35.0">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Stingray TV" x="15.0" y="55.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                       </children></VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <FlowPane fx:id="applicationMenu" disable="true" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: rgba(0, 0, 0, 1);" visible="false">
+                           <children>
+                              <AnchorPane fx:id="anchor20" prefHeight="160.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" x="45.0" y="30.0">
+                                       <image>
+                                          <Image url="@image/galereya.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="text20" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Галерея" x="70.0" y="130.0">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="anchor21" prefHeight="160.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" x="45.0" y="30.0">
+                                       <image>
+                                          <Image url="@image/lk.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="text21" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Личный кабинет" x="40.0" y="130.0">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="anchor22" prefHeight="160.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" x="45.0" y="30.0">
+                                       <image>
+                                          <Image url="@image/multimediya.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="text22" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Мультимедия" x="45.0" y="130.0">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="anchor23" prefHeight="160.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" x="45.0" y="30.0">
+                                       <image>
+                                          <Image url="@image/ohota.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="text23" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Охота и рыбалка" x="35.0" y="130.0">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="anchor24" prefHeight="160.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" x="45.0" y="30.0">
+                                       <image>
+                                          <Image url="@image/zapisi.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="text24" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Записи" x="70.0" y="140.0">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="anchor25" prefHeight="160.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" x="45.0" y="30.0">
+                                       <image>
+                                          <Image url="@image/masternastroiki.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="text25" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Мастер настройки" x="40.0" y="140.0">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="anchor26" prefHeight="160.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" x="45.0" y="30.0">
+                                       <image>
+                                          <Image url="@image/napominaniya.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="text26" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Напоминания" x="45.0" y="140.0">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="anchor27" prefHeight="160.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" x="45.0" y="30.0">
+                                       <image>
+                                          <Image url="@image/poisk.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="text27" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Поиск &quot;Триколор ТВ&quot;" x="20.0" y="140.0">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="anchor28" prefHeight="160.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" x="45.0" y="30.0">
+                                       <image>
+                                          <Image url="@image/kinoz.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="text28" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Кинозалы" x="65.0" y="140.0">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="anchor29" prefHeight="160.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" x="45.0" y="30.0">
+                                       <image>
+                                          <Image url="@image/music.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="text29" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Музыка" x="70.0" y="140.0">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="anchor30" prefHeight="160.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" x="45.0" y="30.0">
+                                       <image>
+                                          <Image url="@image/setting.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="text30" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Настройки" x="65.0" y="140.0">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="anchor31" prefHeight="160.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" x="45.0" y="30.0">
+                                       <image>
+                                          <Image url="@image/poiskchannel.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="text31" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Поиск каналов" x="45.0" y="140.0">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </FlowPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
